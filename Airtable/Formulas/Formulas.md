@@ -1,3 +1,9 @@
+### Template
+```js
+// here comment
+const var = 'value'
+```
+
 ### Adding 1 from button press
 ```js
 // Change this name to use a different table
@@ -15,3 +21,7 @@ let value = record.getCellValue("VALUE_FIELD_NAME")
 await table.updateRecordAsync(record, {"VALUE_FIELD_NAME": value + 1});
 ```
 
+### Currency field to number with thousands comma: X,XXX
+```js
+
+```
