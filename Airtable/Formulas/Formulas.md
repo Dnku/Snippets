@@ -37,16 +37,14 @@ DATETIME_PARSE(SWITCH(DATETIME_FORMAT({Date}, 'MM'), "01", "01/02", "02", "01/03
 SWITCH(DATETIME_FORMAT({Date Field},'MM'),"01","Q1","02","Q1","03","Q1","04","Q2","05","Q2","06","Q2","07","Q3","08","Q3","09","Q3","10","Q4","11","Q4","12","Q4") 
 ```
 
-### Template
+### _ - שוטף
 ```js
-// here comment
-const var = 'value'
+DATEADD(DATETIME_PARSE(DATETIME_FORMAT(DATEADD(Date, 1, 'month'),'01/MM/YYYY'),'DD/MM/YYYY'),-1,'day')'
 ```
 
-### Template
+### שוטף+30
 ```js
-// here comment
-const var = 'value'
+DATEADD(DATETIME_PARSE(DATETIME_FORMAT(DATEADD(DATETIME_PARSE({Date},'DD/MM/YY'),2,'months'),'01/MM/YY'),'DD/MM/YY'),-1,'days')
 ```
 
 
