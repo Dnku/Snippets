@@ -1,3 +1,4 @@
+### Adding 1 from button press
 ```js
 // Change this name to use a different table
 let table = base.getTable("TABLE_NAME");
